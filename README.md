@@ -11,11 +11,6 @@ Written by `Mr Burnt`
 <br/>
 contact with me : `T.me/TheBurnt`
 
-<br>
-<p align="center">
-<a href="https://uupload.ir/view/screenshot_20210809_215752_r5ez.jpg" target="_blank"><img src="https://s4.uupload.ir/files/screenshot_20210809_215752_r5ez_thumb.jpg" border="0" alt="آپلود عکس" /></a>
-</p>
-
 ### How to Install
 
 Open the terminal and type following commands.
@@ -38,7 +33,7 @@ Open the terminal and type following commands.
 *  `python3 run.py`
  
 
-**In the end **
+**In the end**
 
 #### Good luck =|
 
