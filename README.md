@@ -23,7 +23,7 @@ Open the terminal and type following commands.
 
 * `cd Fake-information`
 
-* `pip install -r requirements.txt`
+* `pip install -r requirments.txt`
 
 
 
