@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
 import requests
-from colorama import Fore
+from colorama import Fore,init 
 import os 
 import time
 
+init() 
 os.system("clear")
 
 # api
