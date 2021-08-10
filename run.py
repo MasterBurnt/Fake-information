@@ -149,7 +149,8 @@ while status:
           00000000000 00 0 0  000000000
              00000000000000 0000
                       000000000
-                    000     000000
+                    000     000000 {Fore.RED}
+                   F4k3 !nf0rm47!0n
                     
 {Fore.CYAN}
 [1] Get fake information
