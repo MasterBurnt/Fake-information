@@ -6,38 +6,32 @@ Fake Information Generator
 
 ### Introduction
 Fake-information is a very simple tool for creating fake information
-
-Written by `Mr Burnt`
-<br/>
-contact with me : `T.me/TheBurnt`
-
-
-<a href="https://uupload.ir/" target="_blank"><img src="https://s4.uupload.ir/files/screenshot_20210810_102831_24ty.jpg" border="0" alt="آپلود عکس" length = "20px" /></a>
-
-
+<br />
+<br />
+<img src="image.jpg" />
+<br /> 
 ### How to Install
 
 Open the terminal and type following commands.
 
-* `apt-get update`
-
-* `apt-get install git`
-
-* `git clone https://github.com/MasterBurnt/Fake-information`
-
-* `cd Fake-information`
-
-* `pip install -r requirments.txt`
+<pre><code>git clone https://github.com/MasterBurnt/Fake-information</code></pre>
+<pre><code>cd Fake-information</code></pre>
+<pre><code>pip install -r requirments.txt</code></pre>
 
 
 
 ### How to Use ?
- 
-*  `cd Fake-information`
-*  `python3 run.py`
+
+<pre><code>python3 run.py</code></pre>
  
 
 **In the end**
+<br/>
+contact with me:
+<a href="https://t.me/TheBurnt">Talagram</a>
+<br />
+With Respect, Master Burnt
+<br />
 
 #### Good luck =|
 
