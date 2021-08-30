@@ -12,7 +12,7 @@ Fake-information is a very simple tool for creating fake information
 <br /> 
 ### How to Install
 
-Open the terminal and type following commands.
+Open the terminal and type following commands:
 
 <pre><code>git clone https://github.com/MasterBurnt/Fake-information</code></pre>
 <pre><code>cd Fake-information</code></pre>
