@@ -193,7 +193,7 @@ while status:
         coun = input(c2+f"""
 ┌─[~$Fake information]
 └──╼ {c1}[1] New fake information! 
-       [2] Exit!{c2} 
+     [2] Exit!{c2} 
 ┌─[~$Fake information]
 └──╼ [+] ~> {c1}""")
 
