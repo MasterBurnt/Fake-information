@@ -11,15 +11,19 @@ c2 = Fore.GREEN
 c3 = Fore.RED
 c4 = Fore.CYAN
 c5 = Fore.YELLOW
-os.system("clear")
+
 
 # api
 api = 'https://randomuser.me/api'
 
 # 200
-response = requests.get(api)
-out = response.json()
-
+try:
+    response = requests.get(api)
+    out = response.json()
+except:
+    print(c2+f'Check your {c3}connection {c2}to the {c3}Internet!')
+    exit(1)
+os.system('clear')
 #StatusLocation
 status = True
 
