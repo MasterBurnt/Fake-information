@@ -5,7 +5,7 @@ Fake Information Generator
 [![Python](https://img.shields.io/badge/language-Python%203-blue.svg)](https://www.python.org)
 
 ### Introduction
-Fake-information is a very simple tool for creating fake information
+Fake-information A tool for generating fake information, with [json,csv,yaml and xml] output 
 <br />
 <br />
 <img src="image.jpg" />
