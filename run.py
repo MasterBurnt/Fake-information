@@ -96,7 +96,7 @@ def Feature():
         for i in up:
              print(i,end='')
              sleep(0.003)
-        call = input(c2+f"\n[?]{c1} Please select an option :{c5} ").strip()
+        call = input(c2+f"\n[?]{c1} Please select an option {c7}:{c5} ").strip()
         if call not in ["1","2","3","4","0"]:
             print(c4+f'[-] {c1}Out-of-bounds option! ')
             sleep(2)
