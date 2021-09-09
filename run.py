@@ -1,35 +1,33 @@
-#!/usr/bin/env python3
-
-import requests
-from colorama import Fore,init 
-import os 
-import time
-
-init()
-c1 = Fore.WHITE
-c2 = Fore.GREEN
-c3 = Fore.RED
-c4 = Fore.CYAN
-c5 = Fore.YELLOW
+#!/usr/bin/env python
+# -*- coding:utf-8 -*- 
+#
+# @name   : Fake-information
+# @url    : http://github.com/MasterBurnt
+# @author : MasterBurnt 
 
 
-# api
-api = 'https://randomuser.me/api'
-
-# 200
+#Library
 try:
-    response = requests.get(api)
-    out = response.json()
-except:
-    print(c2+f'Check your {c3}connection {c2}to the {c3}Internet!')
-    exit(1)
-os.system('clear')
-#StatusLocation
-status = True
+    import urllib.request 
+    from os import system 
+    from time import sleep, time
+except ImportError as e:
+    print(e)
 
-#copyright 
-def copyright():
-    print(c2+"""
+#Colors
+c1 = '\033[0m'  #white
+c2 = '\033[92m' #green
+c3 = '\033[96m' #cyan
+c4 = '\033[91m' #red
+c5 = '\033[93m' #yellow 
+c6 = '\033[94m' #blue 
+c7 = '\033[90m' #Black 
+
+#Banner
+def banner():
+    system('clear')
+    banner = c2+f"""
+                      . 
                       00
                       000
                      00000                  .
@@ -52,175 +50,79 @@ def copyright():
              00000000000000 0000
                       000000000
                     000     000000
-""")
-    print(f"""                  F4k3 !nf0rm47!0n{c1} 
-                     Written by{c3}\n                    Master Burnt\n\n            {c4}    Telegram : @MrBurnt""")
+                   {c4}F4k3 !nf0rm47!0n
+                   
 
+          {c6}url {c7}:{c3} http://github.com/MasterBurnt
+                 {c6}author {c7}:{c3} MasterBurnt  
+                   """
+    return print(banner)
 
-# output
-def output():
-    print(c5+"""
-____ ____ _  _ ____    _ _  _ ____ ____
-|___ |__| |_/  |___    | |\ | |___ |  |
-|    |  | | \_ |___    | | \| |    |__|
-""") 
-
-    print(c2+f"┌─[First and last name ~@Fake information]") 
-    print("└──╼ "+c1, out["results"][0]["name"]["first"]," "+out["results"][0]["name"]["last"] )  
-    print(c2+"┌─[dob-date ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["dob"]["date"])
-    print(c2+"┌─[dob-age ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["dob"]["age"])
-    print(c2+"┌─[Gender ~@Fake information]") 
-    print("└──╼ "+c1,out["results"][0]["gender"])
-    print(c2+"┌─[Title ~@Fake information]" )
-    print("└──╼ "+c1, out["results"][0]["name"]["title"])
-    print(c2+"┌─[StreetNumber ~@Fake information]")
-    print("└──╼ "+c1,out["results"][0]["location"]["street"]["number"])
-    print(c2+"┌─[StreetName ~@Fake information]") 
-    print("└──╼ "+c1, out["results"][0]["location"]["street"]["name"])
-    print(c2+"┌─[City ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["location"]["city"])
-    print(c2+"┌─[State ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["location"]["state"])
-    print(c2+"┌─[Country ~@Fake information]") 
-    print("└──╼ "+c1, out["results"][0]["location"]["country"])
-    print(c2+"┌─[PostCode ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["location"]["postcode"])
-    print(c2+"┌─[Coordinates-Latitude ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["location"]["coordinates"]["latitude"])
-    print(c2+"┌─[Coordinates-Longitude ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["location"]["coordinates"]["longitude"])
-    print(c2+"┌─[Timezone-Offset ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["location"]["timezone"]["offset"])
-    print(c2+"┌─[Timezone-Description ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["location"]["timezone"]["description"])    
-    print(c2+"┌─[Phone ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["phone"])
-    print(c2+"┌─[Cell ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["cell"])
-    print(c2+"┌─[id-name ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["id"]["name"])
-    print(c2+"┌─[id-value ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["id"]["value"])
-    print(c2+"┌─[Photo-large link ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["picture"]["large"])
-    print(c2+"┌─[Photo-medium link ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["picture"]["medium"])
-    print(c2+"┌─[Photo-large link ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["picture"]["large"])
-    print(c2+"┌─[Photo-thumbnail link ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["picture"]["thumbnail"])  
-    print(c2+"┌─[Email ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["email"]) 
-    print(c2+"┌─[Login-Uuid ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["login"]["uuid"])
-    print(c2+"┌─[Login-Username ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["login"]["username"])
-    print(c2+"┌─[Login-Password ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["login"]["password"])
-    print(c2+"┌─[Login-Salt ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["login"]["salt"])
-    print(c2+"┌─[Login-md5 ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["login"]["md5"])
-    print(c2+"┌─[Login-sha1 ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["login"]["sha1"])
-    print(c2+"┌─[Login-sha256 ~@Fake information]")
-    print("└──╼ "+c1, out["results"][0]["login"]["sha256"]) 
+#Format
+def format(x):
+    json = "https://randomuser.me/api/?format=json"
+    csv = "https://randomuser.me/api/?format=csv"
+    yaml = "https://randomuser.me/api/?format=yaml"
+    xml = "https://randomuser.me/api/?format=xml"
     
-    print(c4+" \n Information received =|\n")
-
-   
-
-    
-
-while status:
-    goal = input(f"""{c2}
-                      00
-                      000
-                     00000                  .
-                     000000                00
-      .             0000000              0000
-      0000          0000000            00000
-      00000         00000000          000000
-       000000       00000000        0000000
-        0000000     00000000      000000000
-        0000000      0000000     000000000
-         0000000     00000000   000000000
-           000000000  0000000   00000000
-             0000000   000000  0000000            .
-              000000  00000  0000000        000000
-   .           000000  0000  000000    000000000
-    0000000     000000 000   0000   00000000000
-     0000000000   0000  00  0000  00000000000
-       00000000000  000 00 000  0000000000
-          00000000000 00 0 0  000000000
-             00000000000000 0000
-                      000000000
-                    000     000000 {c3}
-
-                   F4k3 !nf0rm47!0n
-                    
-{c4}
-[1] Get fake information
-[2] Written by . . .
-[3] Exit
-{c2}
-┌─[option ~@Fake information]
-└──╼  [+] ~>{c1}""" )
-    if goal == "1":
-        os.system("clear")
-        break 
-        
-    elif goal == "2":
-        os.system("clear")
-        copyright()
-        time.sleep(5)
-        os.system("clear")
-            
-    elif goal == "3":
-        os.system("clear")
-        print(c3+"  .::Best wishes!::. ")
-        time.sleep(1)
-        os.system("clear") 
+    if x == "1":
+        return json
+    elif x == "2":
+       return csv 
+    elif x == "3":
+        return yaml
+    elif x == "4":
+        return xml 
+    elif x == "0":        
+        print(c2+f'[*] {c6}B{c2}e{c3}s{c4}t{c5} {c6}w{c1}i{c2}s{c3}h{c4}e{c5}s{c7} =)')
+        sleep(3)
+        system('clear')
         exit(0)
-        
     else:
-        os.system("clear")
-        print(c3+"You only have two options: 1 or 2 or 3!Try again!" )
-        time.sleep(3)
-        os.system("clear")
-   
-output()
-
-while status:
-        coun = input(c2+f"""
-┌─[~$Fake information]
-└──╼ {c1}[1] New fake information! 
-     [2] Exit!{c2} 
-┌─[~$Fake information]
-└──╼ [+] ~> {c1}""")
-
-        if coun == "1":
-            os.system("clear")
-            # api
-            api = 'https://randomuser.me/api'
-            # 200
-            response = requests.get(api)
-            out = response.json()
-            output()
-            continue 
-            
-        elif coun == "2":
-            os.system("clear")
-            print(c3+"  .::Best wishes!::. ")
-            time.sleep(1)
-            os.system("clear")
-            exit(0)
-            
+        print(c4+f'[!]{c7} Please do not specify an out-of-range option!')
+        sleep(2)
+        Feature()
+#Feature
+def Feature():
+    while True:
+        banner()
+        up = f"""
+{c2}[1]{c1} Get fake information file {c7}:{c1} format-Json
+{c2}[2]{c1} Get fake information file {c7}:{c1} format-Csv
+{c2}[3]{c1} Get fake information file {c7}:{c1} format-Yaml
+{c2}[4]{c1} Get fake information file {c7}:{c1} format-Xml
+{c2}[0]{c1} Exit! 
+ """
+        for i in up:
+             print(i,end='')
+             sleep(0.003)
+        call = input(c2+f"\n[?]{c1} Please select an option :{c5} ").strip()
+        if call not in ["1","2","3","4","0"]:
+            print(c4+f'[-] {c1}Out-of-bounds option! ')
+            sleep(2)
+            pass
         else:
-            os.system("clear")
-            print(c3+"You only have two options: 1 or 2!Try again! " )
-            time.sleep(3)
-            os.system("clear")
- 
+            return format(call)
+            break    
+
+#Request & Saved
+def output():
+        url = Feature()
+        try:
+            r = urllib.request.urlopen(url).read().decode()
+        except :
+            print(c7+f"\n[!] {c4}Please check your connection to the Internet! ")
+            exit(1)
+            
+        File_Extension = url[34:] 
+        file = open(f"fakeinfo.{File_Extension}", "wt")
+        file.write(r)
+        file.close()
+        print(c2+f"[+]{c1} file saved {c7}:{c1} fakeinfo.{File_Extension}")
+        sleep(2)
+        return output()
+            
+#Run                 
+if __name__ == '__main__':
+    output()
+
