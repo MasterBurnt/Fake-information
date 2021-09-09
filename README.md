@@ -16,7 +16,7 @@ Open the terminal and type following commands:
 
 <pre><code>git clone https://github.com/MasterBurnt/Fake-information</code></pre>
 <pre><code>cd Fake-information</code></pre>
-<pre><code>pip install -r requirments.txt</code></pre>
+
 
 
 
